@@ -1,10 +1,14 @@
 .header {
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-family: "Inconsolata", monospace;
+
+    &_burger {
+        display: none;
+    }
 
     &_logo {
         display: flex;
@@ -18,7 +22,8 @@
     }
 
     &_nav {
-        font-size: 20px;
+        font-size: 18px;
+        letter-spacing: 1px;
         &-item {
             margin: 0 30px;
             cursor: pointer;
@@ -30,7 +35,7 @@
 
         &-btn {
             font-family: "Inconsolata", monospace;
-            font-size: 20px;
+            font-size: 18px;
             padding: 15px 20px;
             border-radius: 15px;
             border: none;
@@ -43,6 +48,64 @@
             }
             span {
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+        padding: 20px 50px;
+        &_nav {
+            display: none;
+        }
+
+        &_burger {
+            display: flex;
+            position: relative;
+            z-index: 50;
+            align-items: center;
+            justify-content: flex-start;
+            width: 30px;
+            height: 18px;
+            span {
+                height: 2px;
+                width: 100%;
+                transform: scale(1);
+                background-color: #FAF6F2;
+            }
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 80%;
+                background-color: #FAF6F2;
+                transition: all 0.3s ease 0s;
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+        }
+
+        .active {
+            span {
+                transform: scale(0)
+            }
+            &::before{
+                width: 100%;
+                top: 50%;
+                transform: rotate(-45deg) translate(0, -50%);
+            }
+            &::after{
+                width: 100%;
+                bottom: 50%;
+                transform: rotate(45deg) translate(0, 50%);
             }
         }
     }
