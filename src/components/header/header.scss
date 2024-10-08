@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Inconsolata", monospace;
+
+    &_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &_nav {
+        font-size: 20px;
+        &-item {
+            margin: 0 30px;
+            cursor: pointer;
+            transition: color, 500ms ease;
+            &:hover {
+                color: #ae4eee;
+            }
+        }
+
+        &-btn {
+            font-family: "Inconsolata", monospace;
+            font-size: 20px;
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            background-color: #ae4eee;
+            cursor: pointer;
+            img {
+                vertical-align: middle; 
+                margin-right: 8px; 
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
