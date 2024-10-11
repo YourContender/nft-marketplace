@@ -1,0 +1,108 @@
+.promo {
+    display: flex;
+    justify-content: center;
+    font-family: "Inconsolata", monospace;
+    margin: 50px 0;
+    &_title {
+        &-block {
+            width: 550px;
+            margin-right: 50px;
+            button {
+                font-family: "Inconsolata", monospace;
+                display: block;
+                margin: 30px 0;
+                border: none;
+                outline: none;
+                background-color: #ae4eee;
+                padding: 20px 30px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                cursor: pointer;
+                img {
+                    margin-right: 5px;
+                }
+                span {
+                    font-size: 20px;
+                }
+            }
+            h1 {
+                font-family: "Protest Strike", sans-serif;
+                letter-spacing: 2px;
+                font-size: 65px;
+                font-weight: 600;
+            }
+            span {
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+            &-info {
+                display: flex;
+                &-item {
+                    margin-right: 55px;
+                    h2 {
+                        font-weight: 900;
+                        font-size: 30px;
+                    }
+                    span {
+                        font-size: 24px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &_example {
+        &-photo {
+            height: 400px;
+        }
+        &-author {
+            background-color: #3f3e3e;
+            padding: 20px 0px 20px 30px;
+            border-radius: 0px 0px 15px 15px;
+            h2 {
+                font-size: 26px;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            span {
+                display: flex;
+                font-size: 20px;
+                img {
+                    margin-right: 10px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        justify-content: space-around;
+        &_title {
+            &-block {
+                width: 450px;
+                margin: 0;
+            }
+            h1 {
+                font-size: 45px;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+
+        &_example {
+            width: 400px;
+            &-photo {
+                height: 310px;
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
