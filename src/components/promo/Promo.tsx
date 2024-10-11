@@ -51,6 +51,26 @@ export const Promo: FC = () => {
                         Animakid
                     </span>
                 </div>
+
+                <button className="promo_title-block-btn-mobile">
+                    <img src={img} alt="logo" />
+                    <span>Get Started</span>
+                </button>
+
+                <div className="promo_title-block-info-mobile">
+                    <div className="promo_title-block-info-item">
+                        <h2>240k+</h2>
+                        <span>Total Sale</span>
+                    </div>
+                    <div className="promo_title-block-info-item">
+                        <h2>100k+</h2>
+                        <span>Auctions</span>
+                    </div>
+                    <div className="promo_title-block-info-item">
+                        <h2>240k+</h2>
+                        <span>Artists</span>
+                    </div>
+                </div>
             </div>
         </div>
     )

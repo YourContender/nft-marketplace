@@ -6,8 +6,8 @@
     &_title {
         &-block {
             width: 550px;
-            margin-right: 50px;
-            button {
+            margin-right: 70px;
+            button, &-btn-mobile {
                 font-family: "Inconsolata", monospace;
                 display: block;
                 margin: 30px 0;
@@ -27,6 +27,10 @@
                     font-size: 20px;
                 }
             }
+            &-btn-mobile {
+                display: none;
+            }
+           
             h1 {
                 font-family: "Protest Strike", sans-serif;
                 letter-spacing: 2px;
@@ -37,7 +41,7 @@
                 font-size: 24px;
                 letter-spacing: 1px;
             }
-            &-info {
+            &-info, &-info-mobile {
                 display: flex;
                 &-item {
                     margin-right: 55px;
@@ -50,6 +54,9 @@
                         letter-spacing: 0;
                     }
                 }
+            }
+            &-info-mobile {
+                display: none;
             }
         }
     }
@@ -101,6 +108,250 @@
                 height: 310px;
                 img {
                     width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .promo {
+        &_title {
+            &-block {
+                width: 350px;
+                margin: 0;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            span {
+                font-size: 15px;
+            }
+        }
+
+        &_example {
+            width: 350px;
+            &-photo {
+                height: 275px;
+                img {
+                    width: 350px;
+                }
+            }
+            &-author {
+                padding: 15px 0 15px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        flex-direction: column;
+        align-items: center;
+        &_title {
+            &-block {
+                width: 500px;
+                margin: 0;
+                &-btn {
+                    display: none !important;
+                    &-mobile {
+                        display: block;
+                    }
+                }
+                &-info {
+                    display: none;
+                    &-mobile {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &-item {
+                        margin: 0 25px;
+                        h2 {
+                            font-size: 42px;
+                        }
+                        span {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+            h1 {
+                font-size: 60px;
+            }
+            span {
+                font-size: 25px;
+            }
+            
+        }
+
+        &_example {
+            width: 550px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-photo {
+                height: 430px;
+                img {
+                    width: 550px;
+                }
+            }
+            &-author {
+                padding: 15px 0 15px 30px;
+                width: 550px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        &_title {
+            &-block {
+                width: 450px;
+                &-btn-mobile {
+                    width: 80%;
+                }
+                &-info {
+                    &-mobile {
+                        width: 100%;
+                    }
+                    &-item {
+                        h2 {
+                            font-size: 26px;
+                        }
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            h1 {
+                font-size: 50px;
+            }
+            span {
+                font-size: 22px;
+            }
+            
+        }
+
+        &_example {
+            width: 420px;
+            &-photo {
+                height: 330px;
+                img {
+                    width: 420px;
+                }
+            }
+            &-author {
+                padding: 15px 0 15px 30px;
+                width: 420px;
+            }
+        }
+    }
+}
+
+@media (max-width: 486px) {
+    .promo {
+        &_title {
+            &-block {
+                width: 350px;
+                &-btn-mobile {
+                    width: 100%;
+                }
+                &-info {
+                    &-mobile {
+                        width: 100%;
+                    }
+                    &-item {
+                        h2 {
+                            font-size: 22px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            span {
+                font-size: 18px;
+            }
+            
+        }
+
+        &_example {
+            width: 350px;
+            margin-top: 30px;
+            &-photo {
+                height: 260px;
+                img {
+                    width: 350px;
+                }
+            }
+            &-author {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 386px) {
+    .promo {
+        margin: 25px 0;
+        &_title {
+            &-block {
+                width: 290px;
+                &-btn-mobile {
+                    width: 100%;
+                }
+                &-info {
+                    &-mobile {
+                        width: 100%;
+                    }
+                    &-item {
+                        margin: 10px 0;
+                        h2 {
+                            font-size: 20px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            h1 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+            span {
+                font-size: 16px;
+            }
+            
+        }
+
+        &_example {
+            width: 290px;
+            margin-top: 30px;
+            &-photo {
+                height: 225px;
+                img {
+                    width: 290px;
+                }
+            }
+            &-author {
+                width: 290px;
+                padding: 10px 0 10px 30px;
+                h2 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 18px;
                 }
             }
         }
