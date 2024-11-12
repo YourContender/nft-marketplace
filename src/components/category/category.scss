@@ -1,0 +1,88 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title {
+        width: 100%;
+        padding-left: 40px;
+        h2 {
+            font-family: "Protest Strike", sans-serif;
+            letter-spacing: 2px;
+            font-size: 32px;
+        }
+    }
+    &_list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-item {
+            width: 240px;
+            padding: 15px 0;
+            margin: 20px 20px;
+            &-text {
+                background-color: #3a3737;
+                padding: 25px 5px;
+                margin: -7px 0;
+                border-radius: 0px 0px 10px 10px;
+                span {
+                    font-family: "Inconsolata", monospace;
+                    letter-spacing: .5px;
+                    font-size: 24px;
+                    padding-left: 10px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .category {
+        &_title {
+            h2 {
+                font-size: 28px;
+            }
+        }
+        &_list {
+            &-item {
+                width: 190px;
+                margin: 10px 15px;
+                img {
+                    width: 190px;
+                }
+                &-text {
+                    padding: 10px 5px;
+                    span {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 476px) {
+    .category {
+        &_title {
+            padding-left: 20px;
+            h2 {
+                font-size: 26px;
+            }
+        }
+        &_list {
+            &-item {
+                width: 140px;
+                margin: 10px 10px;
+                img {
+                    width: 140px;
+                }
+                &-text {
+                    padding: 10px 5px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

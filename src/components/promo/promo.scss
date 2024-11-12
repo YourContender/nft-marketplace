@@ -3,6 +3,7 @@
     justify-content: space-between;
     font-family: "Inconsolata", monospace;
     margin: 50px 0;
+    padding: 0 40px;
     &_title {
         &-block {
             width: 550px;
@@ -88,7 +89,8 @@
 
 @media (max-width: 1200px) {
     .promo {
-        justify-content: space-around;
+        // justify-content: space-around;
+        
         &_title {
             &-block {
                 width: 450px;
@@ -148,6 +150,7 @@
     .promo {
         flex-direction: column;
         align-items: center;
+        padding: 0;
         &_title {
             &-block {
                 width: 500px;

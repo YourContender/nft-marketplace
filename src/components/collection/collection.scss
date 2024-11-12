@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
     margin-bottom: 50px;
+    // align-items: center;
     &_title {
         width: 1200px;
         margin: 50px 0;
-        padding-left: 20px;
+        padding-left: 40px;
         h2 {
             font-family: "Protest Strike", sans-serif;
             letter-spacing: 2px;
@@ -76,19 +76,22 @@
 
 @media (max-width: 1200px) {
     .collection {
+        &_title {
+            padding-left: 20px;
+        }
         &_content {
             justify-content: space-between;
             padding: 0;
             &-item {
-                margin: 0px 15px;
+                margin: 0px 10px;
                 &-images {
-                    width: 290px;
+                    width: 300px;
                     img {
-                        width: 290px;
+                        width: 300px;
                     }
                     &-more {
-                        width: 95px;
-                        height: 95px;
+                        width: 100px;
+                        height: 100px;
                     }
                     &-bottom {
                         img {
@@ -111,7 +114,16 @@
         display: none;
     }
     .collection {
+        &_title {
+            h2 {
+                font-size: 28px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
         &_content {
+            justify-content: center;
             &-item {
                 &-images {
                     width: 330px;
@@ -131,9 +143,6 @@
                 }
             }
         }
-        &_title {
-            padding: 0;
-        }
     }
 }
 
@@ -147,16 +156,8 @@
         }
         &_title {
             padding: 0 40px;
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .collection {
-        &_title {
-            text-align: center;
             h2 {
-                font-size: 26px;
+                font-size: 32px;
             }
             span {
                 font-size: 20px;
@@ -165,8 +166,25 @@
     }
 }
 
+@media (max-width: 576px) {
+    .collection {
+        &_title {
+            text-align: left;
+            h2 {
+                font-size: 26px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 @media (max-width: 386px) {
     .collection {
+        &_title {
+            padding: 0 20px;
+        }
         &_content {
             &-item {
                 &-images {

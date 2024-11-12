@@ -1,9 +1,14 @@
 .creators {
-    padding: 20px 20px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        padding: 0 40px;
         &-text {
             h2 {
                 font-family: "Protest Strike", sans-serif;
@@ -42,8 +47,10 @@
     &_authors {
         margin-top: 40px;
         display: flex;
-        width: 1200px;
+        width: 100%;
         flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
         &-item {
             position: relative;
             background-color: #3a3737;
@@ -75,6 +82,171 @@
                 height: 30px;
                 color: #747171;
             }
+        }
+    }
+}
+
+.bottom-btn {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .creators {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &_title {
+            &-text {
+                width: 500px;
+            }
+            &-btn {
+                button {
+                    width: 250px;
+                    span {
+                        letter-spacing: .5s;
+                        font-size: 20px;
+                    }
+                    img {
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .creators {
+        &_authors {
+            &-item {
+                flex-direction: row;
+                width: 375px;
+                padding: 10px 0;
+                &-text {
+                    text-align: left;
+                    padding-left: 20px;
+                }
+                &-position {
+                    top: 5px;
+                    left: 30px;
+                }
+                &-photo {
+                    img {
+                        width: 85px;
+                    }
+                }
+            }
+        }
+        &_title {
+            &-text {
+                width: 350px;
+                h2 {
+                    font-size: 28px;
+                }
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .second {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .top-btn {
+        display: none;
+    }
+    .bottom-btn {
+        display: block;
+        margin-top: 20px;
+    };
+
+    .creators {
+        &_title {
+            &-text {
+                width: 100%;
+                h2 {
+                    font-size: 32px;
+                }
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+        &_authors {
+            &-item {
+                width: 475px;
+                padding: 20px 0;
+                &-position {
+                    top: 20px;
+                    left: 42px;
+                }
+                &-text {
+                    padding-left: 45px;
+                    h2 {
+                        font-size: 28px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .creators {
+        &_authors {
+            &-item {
+                width: 350px;
+                padding: 15px 0;
+                margin: 10px 20px;
+                &-position {
+                    top: 9px;
+                    left: 17px;
+                }
+                &-text {
+                    padding-left: 25px;
+                    h2 {
+                        font-size: 24px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 476px) {
+    .creators {
+        &_authors {
+            &-item {
+                width: 300px;
+                padding: 15px 10px;
+                margin: 10px 0;
+                &-position {
+                    top: 9px;
+                    left: 8px;
+                }
+                &-text {
+                    padding-left: 25px;
+                    h2 {
+                        font-size: 20px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &_title {
+            padding: 0 20px;
         }
     }
 }

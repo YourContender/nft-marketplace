@@ -24,6 +24,15 @@ import animakid from "../src/img/creators/animakid.png";
 import dotgu from "../src/img/creators/dotgu.png";
 import ghiblier from "../src/img/creators/ghiblier.png";
 
+import art from "./img/category/1.png";
+import collect from "./img/category/2.png";
+import music from "./img/category/3.png";
+import photo from "./img/category/4.png";
+import video from "./img/category/5.png";
+import utility from "./img/category/6.png";
+import sport from "./img/category/7.png";
+import visual from "./img/category/8.png";
+
 export const data = [
 	{
 		id: 1,
@@ -61,61 +70,108 @@ export const authors = [
 	{
 		img: keepitreal,
 		name: "Keepitreal",
-		sales: "34.53 ETH"
+		sales: "34.53 ETH",
+		selector: "creators_authors-item",
 	},
 	{
 		img: digi,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "DigiLab",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item",
 	},
 	{
 		img: gravity,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "GravityOne",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item",
 	},
 	{
 		img: juanie,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "Juanie",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item",
 	},
 	{
 		img: whale,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "BlueWhale",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item",
 	},
 	{
 		img: fox,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "Mr Fox",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item",
 	},
 	{
 		img: shroomie,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "Shroomie",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item second",
 	},
 	{
 		img: robotica,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "Shroomie",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item second",
 	},
 	{
 		img: robot,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "RustyRobot",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item second",
 	},
 	{
 		img: animakid,
 		name: "Animakid",
-		sales: "34.53 ETH"
+		sales: "34.53 ETH",
+		selector: "creators_authors-item second",
 	},
 	{
 		img: dotgu,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "Dotgu",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item second",
 	},
 	{
 		img: ghiblier,
-		name: "Keepitreal",
-		sales: "34.53 ETH"
+		name: "Ghiblier",
+		sales: "34.53 ETH",
+		selector: "creators_authors-item second",
+	},
+];
+
+export const category = [
+	{
+		img: art,
+		text: "Art"
+	},
+	{
+		img: collect,
+		text: "Collectibles"
+	},
+	{
+		img: music,
+		text: "Music"
+	},
+	{
+		img: photo,
+		text: "Photography"
+	},
+	{
+		img: video,
+		text: "Video"
+	},
+	{
+		img: utility,
+		text: "Utility"
+	},
+	{
+		img: sport,
+		text: "Sport"
+	},
+	{
+		img: visual,
+		text: "Virtual Worlds"
 	},
 ]
