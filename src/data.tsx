@@ -33,6 +33,13 @@ import utility from "./img/category/6.png";
 import sport from "./img/category/7.png";
 import visual from "./img/category/8.png";
 
+import first from "./img/discover/first.png";
+import second from "./img/discover/second.png";
+import third from "./img/discover/third.png";
+import avatar1 from "./img/discover/avatar1.png";
+import avatar2 from "./img/discover/avatar2.png";
+import avatar3 from "./img/discover/avatar3.png";
+
 export const data = [
 	{
 		id: 1,
@@ -173,5 +180,32 @@ export const category = [
 	{
 		img: visual,
 		text: "Virtual Worlds"
+	},
+]
+
+export const discover = [
+	{
+		title: "Distant Galaxy",
+		author: "MoonDancer",
+		photo: avatar1,
+		price: "1.63 ETH",
+		high: "0.33 wETH",
+		img: first
+	},
+	{
+		title: "Life On Edena",
+		author: "NebulaKid",
+		photo: avatar2,
+		price: "1.63 ETH",
+		high: "0.33 wETH",
+		img: second
+	},
+	{
+		title: "AstroFiction",
+		author: "Spaceone",
+		photo: avatar3,
+		price: "1.63 ETH",
+		high: "0.33 wETH",
+		img: third
 	},
 ]

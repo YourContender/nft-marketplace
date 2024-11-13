@@ -5,6 +5,7 @@ import { Collection } from './components/collection/Collection';
 import "./index.css";
 import { Creators } from './components/creators/Creators';
 import { Category } from './components/category/Category';
+import { Discover } from './components/discover/Discover';
 
 export const App: FC = () => {
     return (
@@ -14,6 +15,7 @@ export const App: FC = () => {
             <Collection/>
             <Creators/>
             <Category/>
+            <Discover/>
         </div>
     )
 }
