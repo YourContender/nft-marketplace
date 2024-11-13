@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 40px;
         &-section {
             h2 {
                 font-size: 32px;
@@ -56,6 +57,7 @@
                     padding: 10px 40px;
                     &-user {
                         display: flex;
+                        margin-top: 5px;
                         img {
                             width: 30px;
                         }
@@ -66,7 +68,7 @@
                     }
                     h4 {
                         font-size: 26px;
-                        letter-spacing: .5px;
+                        letter-spacing: 1px;
                     }
                     span {
                         font-size: 22px;
@@ -86,6 +88,37 @@
                         font-size: 18px;
                     }
                     
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .discover {
+        &_content {
+            &-item {
+                width: 280px;
+                &-photo {
+                    img {
+                        width: 280px;
+                    }
+                }
+                &-descr {
+                    &-title {
+                        padding: 5px 40px;
+                        h4 {
+                            font-size: 22px;
+                        }
+                        span {
+                            font-size: 18px;
+                        }
+                        &-user {
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
                 }
             }
         }
